@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #000000;
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/701eec50-4b87-4dc0-9d00-b0f54025dc36/0994e0a6-dda1-402c-bcbc-480350941609/BR-pt-20220905-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.logo {
+    position: top;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 3rem;
+}
+
+.login-button {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 6rem;
+}
+
+.login-button button {
+    border: none;
+    background-color: #e50914;
+    padding: 1rem 3.5rem;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.form-button {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.form-button button {
+    border: none;
+    background-color: #e50914;
+    padding: 1rem 2.65rem;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+.form-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
