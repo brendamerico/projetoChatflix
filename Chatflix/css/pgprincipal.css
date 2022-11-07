@@ -178,3 +178,14 @@ body {
 .footer .info ul li{
     margin-top: 8px;
 }
+
+.busca-organica{
+	width:120px;
+	height:27px;
+	background-color:#FFF;
+	display:none;
+}
+
+.btn-pesq{
+	display:block;
+}
