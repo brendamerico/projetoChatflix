@@ -1,6 +1,4 @@
 <?php
-
-if (isset($_POST['submit'])) {
     //print_r('firstname: ' . $_POST['firstname']);
     //print_r('<br>');
     //print_r('lastname: ' . $_POST['lastname']);
@@ -23,11 +21,21 @@ if (isset($_POST['submit'])) {
     $email = $_POST['email'];
     $number = $_POST['number'];
     $password = $_POST['password'];
-    $confirmPassword = $_POST['confirmPassword'];
     $gender = $_POST['gender'];
 
 
-    $result = mysqli_query($con, "INSERT INTO cadastro(name, username, email, number, password, confirmPassword, gender) 
-    VALUES ('$name','$username','$email','$number','$password','$confirmPassword','$gender')");
-}
+    $sql = "INSERT INTO cadastro VALUES (null,'$name','$username','$email','$number','$password','$gender')";
+
+    $result = $con->query($sql);
+    if (!$result) {
+        header("Location: ../paginas/login.html");
+        exit(0);
+    } else {
+        session_start();
+        $_SESSION['usuario'] = $username;
+        $_SESSION['senha'] = $senha;
+        header("Location: ../paginas/login.html");
+        exit(0);
+    }
+
 ?>

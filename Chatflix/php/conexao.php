@@ -3,7 +3,7 @@
     $local_bd = "localhost";
     $usuario_bd = "root";
     $senha_bd = "";
-    $database_bd = "chatflix";
+    $database_bd = "sistema001";
     
 
     $con = new mysqli($local_bd, $usuario_bd, $senha_bd, $database_bd);
